@@ -1,0 +1,50 @@
+/*Section-benefits*/
+.section-benefits {
+    background-color: var(--white-color);
+
+&__list {
+    display: flex;
+    gap: 30px;
+    flex-basis: 270px;
+}
+
+&__item {
+    width: 270px;
+}
+
+&__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+&__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+&__text {
+    /*font-weight: 400;*/
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 0;
+}
+
+/*Benefits-icon*/
+&__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+}
