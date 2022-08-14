@@ -13,9 +13,9 @@ address {
     padding-bottom: 60px;
 
 &__box {
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+display: flex;
+align-items: baseline;
+gap: 70px;
 }
 
 .logo {
@@ -83,6 +83,9 @@ address {
     background-color: var(--accent);
 }
 }
+.footer__socials{
+    display:block;
+}
 
 .footer-form {
     margin-left: 23px;
@@ -97,13 +100,15 @@ address {
 }
 
 &__send {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     gap: 12px;
 }
 
 &__input {
+    display: block;
+    align-items: center;
     width: 358px;
     height: 50px;
     padding: 15px 16px;

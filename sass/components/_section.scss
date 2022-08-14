@@ -2,5 +2,6 @@
 .section-team,
 .section-galery,
 .section-clients {
-    @include section(94px);
+    @include section;
 }
+

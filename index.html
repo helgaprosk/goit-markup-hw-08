@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
 <meta charset="UTF-8"/>
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Document</title>
 <!--<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">-->
@@ -22,13 +23,24 @@
 <header class="header" data-header>
     <div class="container header__container">
         <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
-        <nav class="nav">
+        <button class="menu-btn" type="button" data-menu-open>
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+        </button>
+    <!--<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
+            <use class="icon-menu-open" href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+    </button>-->
+    <nav class="nav">
             <ul class="nav__list list">
                 <li> <a href="./index.html" class="nav__link link current">Студия</a> </li>
                 <li> <a href="./portfolio.html" class="nav__link link">Портфолио</a> </li>
                 <li> <a href="" class="nav__link link">Контакты</a> </li>
             </ul>
-        </nav>
+    </nav>
         <ul class="contacts list">
             <li><a href="mailto:info@devstudio.com" class="contacts__mail contacts__link">
                 <svg class="contacts__icon" width="16" height="12">
@@ -47,14 +59,14 @@
         </ul>
     </div> 
 </header>
-<main>
+<main>-->
 <!--Герой-->
-<div>
+<!--<div>
     <section class="hero overlay">
         <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
         <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
     </section>
-</div>
+</div>-->
 <!--Преимущества-->
 <section class="section-benefits">
     <div class="container">
@@ -104,7 +116,7 @@
     </div> 
 </section>
 <!--Чем мы занимаемся-->
-<section class="section">
+<!--<section class="section">
     <div class="container">
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="section__work-list list card-set">
@@ -140,9 +152,9 @@
                 </li>
             </ul>
     </div>
-</section>
+</section>-->
 <!--Наша команда-->
-<section class="section-team">
+<!--<section class="section-team">
     <div class="container">
         <h2 class="section-team__title">Наша команда</h2>
         <ul class=" section-team__list list card-set">
@@ -305,9 +317,9 @@
             </li>
         </ul>
     </div>   
-</section>
+</section>-->
 <!--Section clients-->
-<section class="section-clients container">
+<!--<section class="section-clients container">
   <h1 class="section-clients__title">Постоянные клиенты</h1> 
   <ul class="clients list">
     <li class="clients__item">
@@ -407,7 +419,6 @@
         <div class="footer-form">
             <p class="footer-form__title">Подпишитесь на рассылку</p>
             <form class="footer-form__send">
-                <!--<strong class="form-title">Подпишитесь на рассылку</strong>-->
                 <label class="footer-form__group">
                     <input class="footer-form__input" type="email" name="user-email" placeholder="E-mail"/>
                 </label>
@@ -419,9 +430,9 @@
             </button>
         </div>
     </div>
-</footer>
+</footer>-->
 <!--Модальне вікно--> 
-<div class="backdrop is-hidden" data-modal>
+<!--<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal__btn" data-modal-close>
             <svg class="modal__btn-icon" width="11" height="11">
@@ -484,8 +495,53 @@
             </button>
         </form>
     </div>
+</div>-->
+<!--Mobile menu -->
+<div class="menu-overlay" data-menu>
+    <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-nav list">
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-link link">О нас</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-link link">Услуги и цены</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-link link">Мастера</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="" class="mobile-link link">Контакты</a>
+            </li>
+        </ul>
+        <div class="mobile-contacts">
+            <a class="mobile-contacts-link link" href="+380441111111">+38 044 111 11 11</a>
+            <button class="mobile-contacts-btn btn" type="button">онлайн-запись</button>
+        </div>
+        <ul class="mobile-socilas list">
+            <li class="mobile-socilas-item">
+                <a href="" class="mobile-socilas-link link">Instagram</a>
+            </li>
+            <li class="mobile-socilas-item">
+                <a href="" class="mobile-socilas-link link">Twitter</a>
+            </li>
+            <li class="mobile-socilas-item">
+                <a href="" class="mobile-socilas-link link">Facebook</a>
+            </li>
+            <li class="mobile-socilas-item">
+                <a href="" class="mobile-socilas-link link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
 </div>
+
 <script src="./js/header-scroll.js"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
     </body>
 </html>
