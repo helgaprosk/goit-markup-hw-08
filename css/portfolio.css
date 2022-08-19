@@ -285,7 +285,7 @@ img {
   border: none;
   margin-right: auto;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   background-color: #fff;
   padding: 48px 40px;
   -webkit-transform: translateX(100%);
@@ -394,6 +394,12 @@ img {
   border-top: none;
   border-left: none;
   border-right: none;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 .header__container {
   display: -webkit-box;
@@ -562,7 +568,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts .contacts__tel {
-    margin-right: 50px;
     margin-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -590,7 +595,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts .contacts__mail {
-    margin-right: 50px;
     margin-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -612,7 +616,7 @@ img {
   margin-top: 0;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .section-galery__btn-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1123,6 +1127,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;

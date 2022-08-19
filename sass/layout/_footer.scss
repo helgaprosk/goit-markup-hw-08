@@ -232,6 +232,7 @@
 
     @media screen and (min-width: $desktop) {
         @include df(flex);
+        text-align: left;
         justify-content: start;
     }
 }

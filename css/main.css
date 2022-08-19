@@ -330,7 +330,7 @@ img {
   border: none;
   margin-right: auto;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   background-color: #fff;
   padding: 48px 40px;
   -webkit-transform: translateX(100%);
@@ -439,6 +439,12 @@ img {
   border-top: none;
   border-left: none;
   border-right: none;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 .header__container {
   display: -webkit-box;
@@ -607,7 +613,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts .contacts__tel {
-    margin-right: 50px;
     margin-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -635,7 +640,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts .contacts__mail {
-    margin-right: 50px;
     margin-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -646,8 +650,14 @@ img {
 .hero {
   background-color: var(--background-color-footer);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: var(--white-color);
@@ -1720,6 +1730,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
