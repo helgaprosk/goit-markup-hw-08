@@ -312,9 +312,6 @@ img {
 .mobile-nav__item:hover, .mobile-nav__item:focus, .mobile-nav__item:active {
   color: var(--accent);
 }
-.mobile-nav__item:first-child {
-  margin-top: 48px;
-}
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
