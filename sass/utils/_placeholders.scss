@@ -17,3 +17,15 @@
 
     transition: box-shadow var(--animation);
 }
+
+%reset-link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+%reset-list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}

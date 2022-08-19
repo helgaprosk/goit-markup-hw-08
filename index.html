@@ -19,8 +19,9 @@
 <!--<link rel="stylesheet" href="./css/styles.css"/>-->
 <!--Custom styles end-->
     </head>
+    <body data-page>
         <!--Шапка сайта-->
-<header class="header" data-header>
+<header class="header">
     <div class="container header__container">
         <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
         <button class="menu-btn" type="button" data-menu-open>
@@ -59,14 +60,14 @@
         </ul>
     </div> 
 </header>
-<main>-->
+<main>
 <!--Герой-->
-<!--<div>
+<div>
     <section class="hero overlay">
         <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
         <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
     </section>
-</div>-->
+</div>
 <!--Преимущества-->
 <section class="section-benefits">
     <div class="container">
@@ -116,13 +117,21 @@
     </div> 
 </section>
 <!--Чем мы занимаемся-->
-<!--<section class="section">
+<section class="section">
     <div class="container">
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="section__work-list list card-set">
                 <li class="section__item card-set__item">
                     <a href="">
-                        <img src="./images/box1.jpg" alt="Верстка сайтов" width="370" height="294">
+                        <img
+                        srcset="
+                        ./images\work\img1work@1x_370_result.jpg 370w,
+                        ./images\work\img1work@1x_740_result.jpg 740w"
+                        class="section__img"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                        src="./images/box1.jpg" 
+                        alt="Верстка сайтов" 
+                        width="370" height="294">
                     <div class="project-overlay">
                         <p class="project-overlay__text">
                             Десктопные приложения
@@ -132,7 +141,15 @@
                 </li>
                 <li class="section__item card-set__item">
                     <a href="">
-                        <img src="./images/box2.jpg" alt="Верстка мобильных приложений" width="370" height="294">
+                        <img 
+                        srcset="
+                        ./images\work\img2work@1x_370_result.jpg 370w,
+                        ./images\work\img2work@1x_740_result.jpg 740w"
+                        class="section__img"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                        src="./images/box2.jpg" 
+                        alt="Верстка мобильных приложений" 
+                        width="370" height="294">
                     <div class="project-overlay">
                         <p class="project-overlay__text">
                             Мобильные приложения
@@ -142,7 +159,15 @@
                 </li>
                 <li class="section__item card-set__item">
                     <a href="">
-                        <img src="./images/box3.jpg" alt="Веб-дизайн" width="370" height="294">
+                        <img
+                        srcset="
+                        ./images\work\img3work@1x_370_result.jpg 370w,
+                        ./images\work\img3work@1x_740_result.jpg 740w"
+                        class="section__img"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw" 
+                        src="./images/box3.jpg" 
+                        alt="Веб-дизайн" 
+                        width="370" height="294">
                     <div class="project-overlay">
                         <p class="project-overlay__text">
                             Дизайнерские решения
@@ -152,15 +177,28 @@
                 </li>
             </ul>
     </div>
-</section>-->
+</section>
 <!--Наша команда-->
-<!--<section class="section-team">
-    <div class="container">
+<section class="section-team">
+    <div class="container section-team__container">
         <h2 class="section-team__title">Наша команда</h2>
         <ul class=" section-team__list list card-set">
             <li class="section-team__item card-set__item">
                 <a href="">
-                    <img src="./images/photo1.jpg" alt="Фото Игорь Демьяненко" width="270" height="260">
+            <img 
+            srcset="
+              ./images\team\img1team@1x_270_result.jpg 270w,
+              ./images\team\img1team@1x_354_result.jpg 354w,
+              ./images\team\img1team@1x_450_result.jpg 450w,
+              ./images\team\img1team@2x_540_result.jpg 540w,
+              ./images\team\img1team@2x_708_result.jpg 708w,
+              ./images\team\img1team@2x_900_result.jpg 900w
+            "
+            class="section-team__img"
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            src="./images/photo1.jpg" 
+            alt="Фото Игорь Демьяненко"
+            width="450" height="460">
                 </a>
                 
                 <div class="section-team__wrapper">
@@ -200,7 +238,19 @@
             </li>
             <li class="section-team__item card-set__item">
                 <a href="">
-                    <img src="./images/photo2.jpg" alt="Фото Ольга Репина" width="270" height="260">
+                    <img
+                     srcset="
+                    ./images\team\img2team@1x_270_result.jpg 270w,
+                    ./images\team\img2team@1x_354_result.jpg 354w,
+                    ./images\team\img2team@1x_450_result.jpg 450w,
+                    ./images\team\img2team@2x_540_result.jpg 540w,
+                    ./images\team\img2team@2x_708_result.jpg 708w,
+                    ./images\team\img2team@2x_900_result.jpg 900w"
+            class="section-team__img"
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                     src="./images/photo2.jpg" 
+                     alt="Фото Ольга Репина" 
+                     width="450" height="460">
                 </a>
                 <div class="section-team__wrapper">
                     <h3 class="section-team__name">Ольга Репина</h3>
@@ -239,7 +289,19 @@
             </li>
             <li class="section-team__item card-set__item">
                 <a href="">
-                    <img src="./images/photo3.jpg" alt="Фото Николай Тарасов" width="270" height="260">
+                    <img 
+                     srcset="
+                     ./images\team\img3team@1x_270_result.jpg 270w,
+                     ./images\team\img3team@1x_354_result.jpg 354w,
+                     ./images\team\img3team@1x_450_result.jpg 450w,
+                     ./images\team\img3team@2x_540_result.jpg 540w,
+                     ./images\team\img3team@2x_708_result.jpg 708w,
+                     ./images\team\img3team@2x_900_result.jpg 900w"
+                     class="section-team__img"
+                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                     src="./images/photo3.jpg" 
+                     alt="Фото Николай Тарасов" 
+                     width="450" height="460">
                 </a>
                 <div class="section-team__wrapper">
                     <h3 class="section-team__name">Николай Тарасов</h3>
@@ -278,7 +340,19 @@
             </li>
             <li class="section-team__item card-set__item">
                 <a href="">
-                    <img src="./images/photo4.jpg" alt="Фото Михаил Ермаков" width="270" height="260">
+                    <img 
+                    srcset="
+                    ./images\team\img4team@1x_270_result.jpg 270w,
+                    ./images\team\img4team@1x_354_result.jpg 354w,
+                    ./images\team\img4team@1x_450_result.jpg 450w,
+                    ./images\team\img4team@2x_540_result.jpg 540w,
+                    ./images\team\img4team@2x_708_result.jpg 708w,
+                    ./images\team\img4team@2x_900_result.jpg 900w"
+                    class="section-team__img"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/photo4.jpg" 
+                    alt="Фото Михаил Ермаков" 
+                    width="450" height="460">
                 </a>
                 <div class="section-team__wrapper">
                     <h3 class="section-team__name">Михаил Ермаков</h3>
@@ -317,9 +391,9 @@
             </li>
         </ul>
     </div>   
-</section>-->
+</section>
 <!--Section clients-->
-<!--<section class="section-clients container">
+<section class="section-clients container">
   <h1 class="section-clients__title">Постоянные клиенты</h1> 
   <ul class="clients list">
     <li class="clients__item">
@@ -369,70 +443,78 @@
 </main>
 <!--Футер-->
 <footer class="footer">
-    <div class="container footer__box">
-        <div>
-            <a href="./index.html" class="logo">Web<span class="logo--white">Studio</span></a>
-            <address сlass="footer__map">
-                <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
-                    target="_blank" rel="noreferrer noopener" class="footer__adress-map link"> Киев, пр-т Леси Украинки, 26 </a> <br />
-            </address>
-            <address class="footer__mail">
-                <a href="mailto:info@devstudio.com" class="mail">info@.devstudio.com</a>
-            </address>
-            <address class="footer__tel">
-                <a href="tel:+380961111111" class="tel">+380961111111</a>
+    <div class="container footer__container">
+        <div class="footer-address">
+            <a class="footer-address__logo" href="./index.html" lang="en">Web<span class="logo--white">Studio</span></a>
+            <address class="footer-address__wrap">
+                <ul class="footer-address__list list">
+                    <li class="footer-address__item">
+                        <a class="footer-address__link--map" href="https://goo.gl/maps/WVLapYZfEZGpbT3C7" target="_blank"
+                            rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-address__item">
+                        <a class="footer-address__link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-address__item">
+                        <a class="footer-address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
             </address>
         </div>
-        <div class="footer__socials">
-            <p class="footer__title">Присоединяйтесь</p>
-            <ul class="list socials">
-                <li class="socials__item">
-                    <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <svg class="socials__icon" width="20" height="20">
+        <div class="footer-socials">
+            <h3 class="footer-socials__title">Присоединяйтесь</h3>
+            <ul class="footer-socials__list">
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="" target="_blank" rel="noopener noreferrer"
+                        aria-label="instagram">
+                        <svg width="20" height="20">
                             <use href="./images/icons.svg#instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="socials__item">
-                    <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <svg class="socials__icon" width="20" height="20">
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                        <svg width="20" height="20">
                             <use href="./images/icons.svg#twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="socials__item">
-                    <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <svg class="socials__icon" width="20" height="20">
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                        <svg width="20" height="20">
                             <use href="./images/icons.svg#facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="socials__item">
-                    <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                        <svg class="socials__icon" width="20" height="20">
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                        <svg width="20" height="20">
                             <use href="./images/icons.svg#linkedin"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="footer-form">
-            <p class="footer-form__title">Подпишитесь на рассылку</p>
-            <form class="footer-form__send">
-                <label class="footer-form__group">
-                    <input class="footer-form__input" type="email" name="user-email" placeholder="E-mail"/>
-                </label>
-            <button class="footer-form__btn" type="submit">
-                Подписаться
-                <svg class="footer-form__icon" width="24" height="24">
-                    <use href="./images/icons.svg#send"></use>
-                </svg>
-            </button>
+        <div class="footer-form" role="group">
+            <form class="footer-form__send" action="">
+                <h3 class="footer-form__title">Подпишитесь на рассылку</h3>
+                <div class="footer-form__group">
+                    <label class="footer-form__label" for="email-footer" type="email">
+                        <input class="footer-form__input" type="text" id="email-footer" placeholder="E-mail" />
+                    </label>
+                    <button class="footer-form__btn" type="submit">
+                        Подписаться
+                        <svg class="footer-form__icon" width="24" height="24">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-</footer>-->
+</footer>
 <!--Модальне вікно--> 
-<!--<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal__btn" data-modal-close>
             <svg class="modal__btn-icon" width="11" height="11">
@@ -486,7 +568,7 @@
                 </svg>
                 <span class="register-form__agreement-text">
                     Соглашаюсь с рассылкой и принимаю
-                    <a class="register-form__agreement-link" href="">Условия договора</a>
+                    <a class="register-form__agreement-link" href="">Умови договору</a>
                 </span>
             </label>
         
@@ -495,7 +577,7 @@
             </button>
         </form>
     </div>
-</div>-->
+</div>
 <!--Mobile menu -->
 <div class="menu-overlay" data-menu>
     <div class="menu-container">
@@ -506,40 +588,42 @@
         </button>
 
         <ul class="mobile-nav list">
-            <li class="mobile-nav-item">
-                <a href="" class="mobile-link link">О нас</a>
+            <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link link current">Студия</a>
             </li>
-            <li class="mobile-nav-item">
-                <a href="" class="mobile-link link">Услуги и цены</a>
+            <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a>
             </li>
-            <li class="mobile-nav-item">
-                <a href="" class="mobile-link link">Мастера</a>
-            </li>
-            <li class="mobile-nav-item">
-                <a href="" class="mobile-link link">Контакты</a>
+            <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link link">Контакты</a>
             </li>
         </ul>
-        <div class="mobile-contacts">
-            <a class="mobile-contacts-link link" href="+380441111111">+38 044 111 11 11</a>
-            <button class="mobile-contacts-btn btn" type="button">онлайн-запись</button>
-        </div>
-        <ul class="mobile-socilas list">
-            <li class="mobile-socilas-item">
-                <a href="" class="mobile-socilas-link link">Instagram</a>
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+                <a class="mobile-contacts__tel link" href="tel:+380961111111">+380961111111</a>
             </li>
-            <li class="mobile-socilas-item">
-                <a href="" class="mobile-socilas-link link">Twitter</a>
+            <li class="mobile-contacts__item">
+                <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">
+                    info@.devstudio.com
+                </a>
+            </li> 
+        </ul>
+        <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">Instagram</a>
             </li>
-            <li class="mobile-socilas-item">
-                <a href="" class="mobile-socilas-link link">Facebook</a>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">Twitter</a>
             </li>
-            <li class="mobile-socilas-item">
-                <a href="" class="mobile-socilas-link link">LinkedIn</a>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">LinkedIn</a>
             </li>
         </ul>
     </div>
 </div>
-
 <script src="./js/header-scroll.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>

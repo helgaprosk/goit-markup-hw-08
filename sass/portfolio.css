@@ -220,12 +220,16 @@ img {
 
 /*Site-nav*/
 .nav {
-  /*margin-right: auto;*/
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
+}
+.nav__list {
+  display: flex;
+  gap: 50px;
 }
 .nav .nav__link {
   color: var(--title-text-color);
@@ -297,8 +301,13 @@ img {
 
 */
 .contacts {
-  display: none;
+  display: flex;
   /*Contacts icons*/
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 .contacts__link {
   display: flex;

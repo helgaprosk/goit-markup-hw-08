@@ -2,11 +2,28 @@
     
 &__btn-list {
     display: flex;
-    gap: 8px;
-    /*row-gap:8px;
-column-gap:8px;*/
+    align-items: center;
     justify-content: center;
-    margin-bottom: 56px;
+    gap: 8px;
+    /*row-gap:8px;column-gap:8px;*/
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $mobile) {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            height: 91px;
+            width: 326px;
+        }
+    
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 50px;
+        }
 }
 
 &__btn {
@@ -38,7 +55,18 @@ column-gap:8px;*/
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: var(--indent);
+    margin-top: 0;
+    
+    --items: 1;
+
+    @media screen and (min-width: $tablet) {
+            --items: 2;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            --items: 3;
+        }
 
 .link {
     text-decoration: none;
@@ -76,6 +104,7 @@ column-gap:8px;*/
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+    //flex-grow: 1;
 }
 
 /*Выезжающий текст на карточку Портфолио*/

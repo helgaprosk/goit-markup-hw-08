@@ -1,8 +1,20 @@
 .contacts {
-    @media screen and (max-width:767px)
-    {display:none;}
+    @media screen and (max-width:767px){
+        display:none;
+    }
+
+    @media screen and (min-width: 768px) {
+            
     
-    display: flex;
+        }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+             margin-left: auto;
+             gap: var(--indent);
+    }
+    
+    
 
 /*Contacts icons*/
     &__link {
@@ -36,11 +48,18 @@
             color: var(--primary-text-color);
             @include fonts(14px,16px,500);
             text-decoration: none;
-            padding-top: 32px;
-            padding-bottom: 32px;
             display: flex;
+            align-items: center;
+            justify-content: flex-start;
     
             transition: color var(--animation);
+
+            @media screen and (min-width: $desktop) {
+                    margin-right: 50px;
+                    margin-bottom: 0;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                }
         }
     
 .contacts__mail {
@@ -50,12 +69,20 @@
             line-height: 1.14;
             letter-spacing: 0.02em;
             text-decoration: none;
-            margin-right: 50px;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            display: block;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
     
             transition: color var(--animation);
+
+            @media screen and (min-width: $desktop) {
+                margin-right: 50px;
+                margin-bottom: 0;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
         }
     }
 

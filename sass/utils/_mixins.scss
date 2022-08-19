@@ -11,6 +11,17 @@
   }
 }
 
+@mixin centerdf($type) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin df($type) {
+  display: $type;
+}
+
+
 @mixin fonts($fs, $lh, $fw: 400, $ls: 0.02em) {
   font-weight: $fw;
   font-size: $fs;
